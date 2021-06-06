@@ -1,0 +1,40 @@
+/* Remove styles */
+*, *::after, *::before {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--clr-darkest: #1b233c;
+	--clr-dark: #181a4d;
+	--clr-mid: #12447c;
+	--clr-light: #1277cf;
+	--clr-lightest: #198cff;
+
+	--clr-text: var(--clr-darkest);
+	--clr-background: #fff;
+}
+
+:root, html, body {
+	position: relative;
+	width: 100%;
+}
+
+body {
+	color: var(--clr-text);
+	background-color: var(--clr-background);
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+a {
+	color: var(--clr-lightest);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+	color: var(--clr-light);
+}
