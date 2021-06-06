@@ -1,0 +1,8 @@
+# Modules (only needed for development)
+/node_modules/
+
+# Mac files
+.DS_Store
+
+# IDE management folders
+/.vscode/
