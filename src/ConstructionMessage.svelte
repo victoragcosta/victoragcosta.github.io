@@ -13,20 +13,15 @@
 	}
 
 	h1 {
-		color: #ff3e00;
+		color: var(--clr-lightest);
 		font-size: 4em;
 		font-weight: 100;
 	}
 
 	h2 {
-    color: #333;
 		font-size: 2em;
 		font-weight: 100;
 	}
-
-  a {
-    color: #ff3e00;
-  }
 
 	@media (min-width: 640px) {
 		main {
