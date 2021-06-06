@@ -8,26 +8,21 @@ on:
       - main
 
 jobs:
-  setup:
+  Build-and-Deploy:
     runs-on: ubuntu-latest
     steps:
+
+      # Setup
       - name: Check out repository code
         uses: actions/checkout@v2
       - name: Install modules
         run: npm install
 
-  build:
-    runs-on: ubuntu-latest
-    needs: setup
-    steps:
-
+      # Build
       - name: Build svelte app
         run: npm run build
 
-  deploy:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
+      # Deploy
       - name: Save to gh-pages branch
         if: success()
         uses: crazy-max/ghaction-github-pages@v2
