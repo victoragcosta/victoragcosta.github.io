@@ -1,6 +1,9 @@
 # Modules (only needed for development)
 /node_modules/
 
+# Build files
+/public/build/
+
 # Mac files
 .DS_Store
 
